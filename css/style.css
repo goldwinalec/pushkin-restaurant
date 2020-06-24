@@ -1,0 +1,256 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1d1d1d;
+}
+
+img {
+  display: block;
+}
+
+.header {
+  padding: 30px 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+a:hover {
+  color: #327430;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  align-self: center;
+}
+
+.login_button {
+  display: block;
+  max-width: 80px;
+  margin: 0 27px 0 0;
+  padding: 14px 20px;
+  font-weight: 500;
+  font-size: 13px;
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  color: #1d1d1d;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.restaurants__search input {
+  width: 100%;
+  margin: 56px 0;
+  border: none;
+  border-bottom: 1px solid #757575;
+  color: #626262;
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
+}
+
+.restaurants {
+  padding-bottom: 100px;
+}
+
+.restaurants__title {
+  margin-bottom: 25px;
+}
+
+.restaurant__card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7px;
+  max-width: 308px;
+}
+
+.restaurant__card-image {
+  width: 100%;
+}
+
+.restaurant__card-title {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 16px 0 0 0;
+}
+
+.restaurant__card-category {
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+  margin: 4px 0 0 0;
+}
+
+.restaurant__card-time {
+  font-size: 13px;
+  line-height: 21px;
+  margin: 4px 0 0 0;
+  padding-bottom: 20px;
+}
+
+.restaurant__card:hover {
+  cursor: pointer;
+  background-color: rgba(117, 117, 117, 0.04);
+}
+
+.footer {
+  padding-top: 56px;
+  padding-bottom: 40px;
+  background-color: #262626;
+}
+
+.footer__info {
+  padding-top: 32px;
+  padding-bottom: 48px;
+  border-top: 1px solid rgba(256, 256, 256, 0.4);
+  border-bottom: 1px solid rgba(256, 256, 256, 0.4);
+  margin-top: 60px;
+}
+
+.footer__language {
+  max-width: 227px;
+  margin-bottom: 33px;
+}
+
+.footer__select,
+.footer__select:focus {
+  width: 100%;
+  background: #3b3b3b;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  line-height: 15px;
+  height: 40px;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer__select:hover {
+  cursor: pointer;
+}
+
+.footer__select-option {
+  outline: none;
+}
+
+.footer__social {
+  margin-bottom: 20px;
+}
+.hashtag {
+  color: #49a144;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.hashtag-2 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.footer__social-icons {
+  display: flex;
+}
+
+.footer__social-icon {
+  margin-right: 15px;
+  display: block;
+}
+
+.footer__list {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.footer__list-item a {
+  color: #fff;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.footer__list-item a:hover {
+  color: #327430;
+}
+
+.footer__list-item {
+  margin-bottom: 23px;
+}
+
+.footer__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.footer__apps {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(256, 256, 256, 0.4);
+}
+
+.footer__apps-link {
+  margin: 0 10px;
+}
+
+.footer__policy {
+  padding-top: 40px;
+}
+
+.footer__policy-link,
+.footer__copyright {
+  display: block;
+  font-size: 11px;
+  line-height: 13px;
+  color: #fff;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.top-btn,
+.top-btn:focus {
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: #59bd5a;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.top-btn img {
+  margin: auto;
+}
+
+.top-btn.visible {
+  opacity: 1;
+}
