@@ -45,31 +45,37 @@
   padding: 40px 0;
 }
 
-.menu-list {
-  padding: 0;
-  margin: 0;
-}
-
-.menu-list li {
+.tabs__caption li {
   margin-right: 40px;
 }
 
-ul a {
+.tabs__caption {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   color: #626262;
+  padding: 0;
+  margin: 0;
 }
 
-li .active {
+.tabs__caption li.active {
   color: #327430;
   text-decoration: none;
   cursor: default;
 }
 
-.menu {
+.tabs__caption li:not(.active) {
+  cursor: pointer;
+}
+
+.tabs__content {
   padding-top: 30px;
   padding-bottom: 30px;
+  display: none;
+}
+
+.tabs__content.active {
+  display: block;
 }
 
 .menu__title {
@@ -97,6 +103,7 @@ li .active {
 }
 
 .menu__name {
+  display: block;
   font-weight: normal;
   font-size: 16px;
   padding-top: 15px;
@@ -121,10 +128,11 @@ li .active {
 }
 
 .menu__img {
-  height: 100%;
+  height: auto;
+  max-width: 50%;
 }
 
 .menu__inner {
   margin-right: 5px;
-  width: 50%;
+  max-width: 50%;
 }
